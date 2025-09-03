@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("https://static.vecteezy.com/system/resources/previews/007/972/775/non_2x/dark-black-and-gray-blurred-background-has-a-little-abstract-light-free-photo.jpg") no-repeat center center/cover;
+  color: white;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  width: 1100px;   
+  height: 600px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.left {
+  flex: 1;
+  padding: 20px;
+}
+
+.left h1 {
+  font-size: 6rem;  /* Adjust kadakuon */
+  font-weight: bold;
+}
+
+.left p {
+  max-width: 400px;
+  font-size: 1.5rem;
+}
+
+.Rariest {
+  color: rgb(184, 184, 184);
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+
+.right h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+.right .btn-custom {
+  display: block;
+  width: 100%;         
+  margin-top: 5px;    
+}
+
+.btn-custom {
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  margin-top: 10px;
+   padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+.right h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.right .btn-custom {
+  display: block;
+  margin: 15px auto 0; /* top, auto-center, bottom */
+}
+.right p.small {
+  text-align: center;
+}
+
+/* Animation button color */
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #ffffff; 
+  color: #000000; 
+  border: 1px solid #ccc; 
+  text-shadow: 0 0 5px #999, 0 0 10px #aaa; 
+  box-shadow: 0 0 5px #bbb, 0 0 15px #ccc; 
+}
+
+
+.right a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+/* Rariest Logo */
+@keyframes square-animation {
+ 0% {
+  left: 0;
+  top: 0;
+ }
+
+ 10.5% {
+  left: 0;
+  top: 0;
+ }
+
+ 12.5% {
+  left: 32px;
+  top: 0;
+ }
+
+ 23% {
+  left: 32px;
+  top: 0;
+ }
+
+ 25% {
+  left: 64px;
+  top: 0;
+ }
+
+ 35.5% {
+  left: 64px;
+  top: 0;
+ }
+
+ 37.5% {
+  left: 64px;
+  top: 32px;
+ }
+
+ 48% {
+  left: 64px;
+  top: 32px;
+ }
+
+ 50% {
+  left: 32px;
+  top: 32px;
+ }
+
+ 60.5% {
+  left: 32px;
+  top: 32px;
+ }
+
+ 62.5% {
+  left: 32px;
+  top: 64px;
+ }
+
+ 73% {
+  left: 32px;
+  top: 64px;
+ }
+
+ 75% {
+  left: 0;
+  top: 64px;
+ }
+
+ 85.5% {
+  left: 0;
+  top: 64px;
+ }
+
+ 87.5% {
+  left: 0;
+  top: 32px;
+ }
+
+ 98% {
+  left: 0;
+  top: 32px;
+ }
+
+ 100% {
+  left: 0;
+  top: 0;
+ }
+}
+
+.loader {
+ position: relative;
+ width: 96px;
+ height: 96px;
+ transform: rotate(45deg);
+}
+
+
+.loader-square {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 28px;
+ height: 28px;
+ margin: 2px;
+ border-radius: 0px;
+ background: white;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ animation: square-animation 10s ease-in-out infinite both;
+}
+
+.loader-square:nth-of-type(0) {
+ animation-delay: 0s;
+}
+
+.loader-square:nth-of-type(1) {
+ animation-delay: -1.4285714286s;
+}
+
+.loader-square:nth-of-type(2) {
+ animation-delay: -2.8571428571s;
+}
+
+.loader-square:nth-of-type(3) {
+ animation-delay: -4.2857142857s;
+}
+
+.loader-square:nth-of-type(4) {
+ animation-delay: -5.7142857143s;
+}
+
+.loader-square:nth-of-type(5) {
+ animation-delay: -7.1428571429s;
+}
+
+.loader-square:nth-of-type(6) {
+ animation-delay: -8.5714285714s;
+}
+
+.loader-square:nth-of-type(7) {
+ animation-delay: -10s;
+}

@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $("form").submit(function(){alert("bwas signup!");})
+    $("form").submit(function(){alert("Sample");})
 });

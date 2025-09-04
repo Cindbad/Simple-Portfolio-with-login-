@@ -8,17 +8,36 @@ $(document).ready(function(){
     $(window).resize(function(){alert("Windows Change size!")});
 
     $("#password").change(function(){
-        if(this.value.length < 5){
+        if($("#password").val().length < 5){
             alert("Password must be atleast 5 characters");
         }
     });
 
-    $("input").focus(function() {
-    $(this).css("background-color", "#daf3fdff");
+    $("#email").hover(function() { 
+        $("#email").attr("placeholder", "Always put @ in your email");},
+    function(){
+        $("#email").attr("placeholder", "Input Email Here");
+     }
+    );
+
+    $("#email").keypress(function(event) {
+        if (event.key === " "){
+            alert("Spaces are not allowed in email!");
+            event.preventDefault();
+    }
+    });
+
+    $("input").focus(function() { 
+        $(this).css("background-color", "#daf3fdff");
     });
 
     $("input").blur(function() {
-     $(this).css("background-color", ""); 
+       $(this).css("background-color", ""); 
     });
 
+    $(".left h1").click(function(){
+       $(".left p").slideToggle("slow");
+    });
+    
+    $(".right").hide().fadeIn(1500);
 });

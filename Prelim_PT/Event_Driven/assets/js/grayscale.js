@@ -1,5 +1,5 @@
 (function() {
-  "use strict"; // Start of use strict
+  "use strict"; 
 
   var mainNav = document.querySelector('#mainNav');
 
@@ -40,4 +40,17 @@
     document.addEventListener("scroll", collapseNavbar);
   }
 
-})(); // End of use strict
+})();
+
+function flipCard1() {
+  const card = document.getElementById('profileCard1');
+  card.classList.toggle('flipped');
+}
+function flipCard2() {
+  const card = document.getElementById('profileCard2');
+  card.classList.toggle('flipped');
+}
+function flipCard3() {
+  const card = document.getElementById('profileCard3');
+  card.classList.toggle('flipped');
+}

@@ -17,8 +17,11 @@ $(document).ready(function(){
         $("#email").attr("placeholder", "Always put @ in your email");},
     function(){
         $("#email").attr("placeholder", "Input Email Here");
-     }
-    );
+     });
+
+    $("#pass").hover(function(){
+        $("#pass").attr("placeholder", "Password must contain alphanumeric characters!")
+    ;});
 
     $("#email").keypress(function(event) {
         if (event.key === " "){

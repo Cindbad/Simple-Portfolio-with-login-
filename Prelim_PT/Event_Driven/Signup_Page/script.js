@@ -22,6 +22,11 @@ $(document).ready(function(){
     }
     });
 
+    $("#password").hover(function(){
+        $("#password").attr("placeholder", "Password must contain alphanumeric characters!")
+    ;});
+
+
     $("#password").change(function(){
         if($("#password").val().length < 5){
             alert("Password must be atleast 5 characters");

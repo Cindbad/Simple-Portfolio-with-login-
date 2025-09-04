@@ -2,7 +2,7 @@ $(document).ready(function(){
     
     $("form").submit(function(event){
     event.preventDefault()
-    window.location.href = "../Homepage/index.html"; 
+    window.location.href = "../Homepage/home.html"; 
     })
 
     $(window).resize(function(){alert("Windows Change size!")});
@@ -19,8 +19,8 @@ $(document).ready(function(){
         $("#email").attr("placeholder", "Input Email Here");
      });
 
-    $("#pass").hover(function(){
-        $("#pass").attr("placeholder", "Password must contain alphanumeric characters!")
+    $("#password").hover(function(){
+        $("#password").attr("placeholder", "Password must contain alphanumeric characters!")
     ;});
 
     $("#email").keypress(function(event) {

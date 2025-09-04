@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("form").submit(function(event){
     alert("Account Created!");
     event.preventDefault()
-    window.location.href = "../Login_Page/index.html"; 
+    window.location.href = "index.html"; 
     })
 
     $(window).resize(function(){alert("Windows Change size!")});
@@ -23,8 +23,10 @@ $(document).ready(function(){
     });
 
     $("#password").hover(function(){
-        $("#password").attr("placeholder", "Password must contain alphanumeric characters!")
-    ;});
+        $("#password").attr("placeholder","Password must contain alphanumeric characters!");},
+    function(){
+        $("#password").attr("placeholder", "Input Password Here");
+    });
 
 
     $("#password").change(function(){

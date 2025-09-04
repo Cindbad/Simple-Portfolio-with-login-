@@ -1,206 +1,96 @@
-.hero {
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("https://static.vecteezy.com/system/resources/previews/007/972/775/non_2x/dark-black-and-gray-blurred-background-has-a-little-abstract-light-free-photo.jpg") no-repeat center center/cover;
+  color: white;
   display: flex;
-  justify-content: center;  /* center horizontally */
-  align-items: center;      /* (optional) center vertically if taller */
-  margin: 30px 0;           /* space above/below logo */
+  align-items: center;
+  justify-content: center;
 }
 
-#home{
-    margin-left: 50px;
+/*All contents div*/
+.container-box {
+  width: 1100px;   
+  height: 600px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.content-section1 {
-    padding-top: 40px;   /* reduce from default (often 100px) */
-    padding-bottom: 0;
-    margin-bottom: 0;    /* remove extra bottom gap */
+/*Left div*/
+.left {
+  flex: 1;
+  padding: 20px;
 }
-
-
-.card-container1 {
-    perspective: 1000px;
-    width: 17em;
-    height: 25em;
-    cursor: pointer;
-    position: relative;
-    left: 90px;
+.left h1 {
+  font-size: 6rem;  /* Adjust kadakuon */
+  font-weight: bold;
 }
-
-.card:hover{
+.left p {
+  max-width: 400px;
+  font-size: 1.5rem;
+}
+.Rariest {
+  color: rgb(184, 184, 184);
+}
+/*Right div*/
+.right {
+  flex: 1;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+.right h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+.btn-custom {
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  margin-top: 10px;
+   padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none
+}
+.right h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.right .btn-custom {
+  display: block;
+  margin: 15px auto 0; 
+}
+.right p.small {
+  text-align: center;
+}
+.right a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+/* Animation button color */
+.btn-custom:hover,
+.btn-custom:focus {
   background-color: #ffffff; 
   color: #000000; 
   border: 1px solid #ccc; 
-  box-shadow: 0 0 5px #ffe, 0 0 15px #ede; 
+  text-shadow: 0 0 5px #999, 0 0 10px #aaa; 
+  box-shadow: 0 0 5px #bbb, 0 0 15px #ccc; 
 }
-
-        
-.card-container2 {
-    perspective: 1000px;
-    width: 17em;
-    height: 25em;
-    cursor: pointer;
-    position: relative;
-    left: 550px;
-    bottom: 400px;
-}
-
-        
-.card-container3 {
-    perspective: 1000px;
-    width: 17em;
-    height: 25em;
-    cursor: pointer;
-    position: relative;
-    left: 990px;
-    bottom: 800px;
-}
-
-
-
-.card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.8s ease-in-out;
-
-}
-
-.card.flipped {
-    transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: #171717;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-back {
-    transform: rotateY(180deg);
-}
-
-.card span {
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    display: block;
-    font-size: 1em;
-}
-
-.card .info {
-    font-weight: 400;
-    color: white;
-    display: block;
-    text-align: center;
-    font-size: 0.72em;
-    margin: 1em;
-}
-
-.card .img {
-    width: 4.8em;
-    height: 4.8em;
-    background: white;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 1em;
-}
-
-.card .share {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
-.card a {
-    color: white;
-    transition: .4s ease-in-out;
-}
-
-.card a:hover {
-    color: #7f7166;
-}
-
-.card button {
-    padding: 0.8em 1.7em;
-    display: block;
-    margin: auto;
-    margin-top: auto;
-    margin-bottom: 1.5em;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    transition: .4s ease-in-out;
-    cursor: pointer;
-}
-
-.card button:hover {
-    background: #7f7166;
-    color: white;
-}
-
-        /* Back side specific styles */
-.card-back {
-     padding: 1.5em;
-    justify-content: space-between;
-}
-
-.back-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.back-section {
-    margin-bottom: 1.5em;
-}
-
-.back-section h3 {
-    color: white;
-    font-size: 0.9em;
-    margin-bottom: 0.5em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.back-section p {
-    color: white;
-    font-size: 0.7em;
-    text-align: center;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    justify-content: center;
-    margin-top: 0.5em;
-}
-
-.skill-tag {
-    background: #7f7166;
-    color: white;
-    padding: 0.3em 0.8em;
-    border-radius: 15px;
-    font-size: 0.6em;
-    font-weight: bold;
-}
-
-.nav-link:hover{
-    background-color: #7f7166;
-}
-
-        /* Rariest Logo */
+/* Rariest Logo */
 @keyframes square-animation {
  0% {
   left: 0;

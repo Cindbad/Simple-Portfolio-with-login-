@@ -2,7 +2,7 @@ $(document).ready(function(){
     
     $("form").submit(function(event){
     event.preventDefault()
-    window.location.href = "../Homepage/home.html"; 
+    window.location.href = "home.html";
     })
 
     $(window).resize(function(){alert("Windows Change size!")});

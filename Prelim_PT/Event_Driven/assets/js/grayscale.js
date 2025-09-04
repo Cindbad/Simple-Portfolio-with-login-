@@ -42,6 +42,7 @@
 
 })();
 
+//card flip
 function flipCard1() {
   const card = document.getElementById('profileCard1');
   card.classList.toggle('flipped');

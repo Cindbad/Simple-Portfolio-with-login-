@@ -1,9 +1,8 @@
 $(document).ready(function(){
     
     $("form").submit(function(event){
-    alert("Account Created!");
     event.preventDefault()
-    window.location.href = "../sign_in/index.html"; 
+    window.location.href = "../Homepage/index.html"; 
     })
 
     $(window).resize(function(){alert("Windows Change size!")});

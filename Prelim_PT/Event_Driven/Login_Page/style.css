@@ -78,7 +78,7 @@ body {
 }
 .right .btn-custom {
   display: block;
-  margin: 15px auto 0; /* top, auto-center, bottom */
+  margin: 15px auto 0; 
 }
 .right p.small {
   text-align: center;
